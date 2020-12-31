@@ -1,6 +1,14 @@
 # if you get error like namespace default is forbidden ...you need to create a service account for helm in kube-system...
 
 
+#kubectl --namespace kube-system create serviceaccounttiller
+#kubectl create clusterrolebinding tiller-cluster-rule \
+ --clusterrole=cluster-admin --serviceaccount=kube-system:tiller
+ #kubectl --namespace kube-system patch deploy tiller-deploy \
+ -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
+# update the repo
+helm list
+helm repo update
 
 
 
