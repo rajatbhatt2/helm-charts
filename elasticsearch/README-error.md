@@ -7,8 +7,12 @@
  #kubectl --namespace kube-system patch deploy tiller-deploy \
  -p '{"spec":{"template":{"spec":{"serviceAccount":"tiller"}}}}'
 # update the repo
-helm list
-helm repo update
+helm list 
+helm repo update  
+
+# to delete elastic search 
+ helm del --purge elasticsearch
+
 
 
 
