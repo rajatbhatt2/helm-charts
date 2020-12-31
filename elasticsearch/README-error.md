@@ -1,3 +1,10 @@
+# if you get error like namespace default is forbidden ...you need to create a service account for helm in kube-system...
+
+
+
+
+
+
 # Elasticsearch Helm Chart
 
 This Helm chart is a lightweight way to configure and run our official
