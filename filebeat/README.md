@@ -1,4 +1,4 @@
-# Filebeat Helm Chart
+# Filebeat Helm Chart...
 
 This Helm chart is a lightweight way to configure and run our official
 [Filebeat Docker image][].
